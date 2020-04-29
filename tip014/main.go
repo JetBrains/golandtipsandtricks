@@ -5,17 +5,10 @@ import (
 	"fmt"
 )
 
-// Step 0. First go to 1. then 2. and 3.
+// Step 0. First go to 1. then 2.
 
 // Step 2. Use multi-cursor mode to select both fields and then
 //  type ` and use "json" Live Template
-
-// Step 3. Define and use a custom tag.
-
-type message struct {
-	Field1 int
-	Field2 string
-}
 
 func main() {
 

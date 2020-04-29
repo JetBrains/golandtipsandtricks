@@ -2,11 +2,11 @@ package main
 
 func main() {
 	// Parameter Info helps you to see parameters in a function/method.
-	// E.g. Invoke it here
+	// Step 1. Invoke it here
 	myFunc()
 
 	// But also in a struct.
-	// E.g. Invoke it here
+	// Step 2. Invoke it here
 	_ = demo{}
 }
 

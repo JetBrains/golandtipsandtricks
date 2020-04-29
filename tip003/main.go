@@ -11,9 +11,11 @@ func convertToString(n int) string {
 
 func main() {
 	// Step 1. Cyclic Expand Word completion helps quickly using identifiers
-	// from above, or below the current caret position
+	//  from above, or below the current caret position
 
-	// E.g. At the end of con use Cyclic Expand Word
+	// Step 2. Cyclic Expand Word (Backward) also works
+
+	// E.g. At the end of "con" use Cyclic Expand Word
 	fmt.Printf("running con")
 }
 

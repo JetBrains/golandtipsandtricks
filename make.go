@@ -22,8 +22,8 @@ func main()  {
 go 1.11
 `
 
-	for i := 0; i < 42; i++ {
-		currentIndex := fmt.Sprintf("tip%03d", i+1)
+	for i := 26; i <= 30; i++ {
+		currentIndex := fmt.Sprintf("tip%03d", i)
 		dirName := "./" + currentIndex
 		if err := os.Mkdir(dirName, os.ModeDir); err != nil {
 			log.Fatalln(err)

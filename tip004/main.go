@@ -7,8 +7,8 @@ import (
 func main() {
 	// Postfix completion helps you quickly wrap code
 	// with predefined code templates.
-	// E.g. Use .var after the below expression
 
+	// E.g. Use .var after the below expression
 	sendMessage("hello GoPHeRS!")
 }
 
