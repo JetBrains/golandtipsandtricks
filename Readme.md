@@ -49,6 +49,13 @@ Here's a list of these tips&tricks:
 | 029 | Parameter name auto-generation |
 | 030 | Introduce Constant/Variable refactoring. Inline refactoring |
 
+## Setup the IDE for tips/comments/shortcut highlighting
+
+To see the shortcuts in a nice manner, setup the following TODOs:
+- `// E.g. ` -> `\b(E\.g\. )\b.*`, Case Sensitive, Color #35C03B
+- `// Step x. ` -> `\b(Step \d\. )\b.*`, Case Sensitive, Color #35C03B
+- `// Shortcut: ` -> `\b(Shortcut: )\b.*`, Case Sensitive, Color #2B80C0
+
 ## Contributions welcomed
 
 Do you have a favorite tip or trick, and you want to see it here?
