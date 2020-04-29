@@ -5,8 +5,11 @@ import (
 )
 
 func main() {
-	// Method-like completion helps you quickly find functions that
-	// match their first parameter to the type you invoke it for
+	// Step 1. Method-like completion helps you quickly find
+	//  functions that match their first parameter to the
+	//  type you invoke it for
+	// Shortcut: Ctrl + Space + Space on Windows/Linux
+	//           ^ + Space + Space on macOS
 
 	msg := "hello GoPHeRS!"
 

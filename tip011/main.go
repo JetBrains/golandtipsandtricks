@@ -10,11 +10,11 @@ import (
 func main() {
 	// Code completion works in language injections too!
 
-	// E.g. Inject json below
+	// Step 1. Inject (Alt+Enter | Inject Language | JSON) below
 	json := ""
 	fmt.Println(json)
 
-	// E.g. Inject Go Template below
+	// Step 2. Inject Go Template below
 	//  and type something like "各位 {{.Message}} 晚上好"
 	message := ``
 	printMessage(message, "Gopher")

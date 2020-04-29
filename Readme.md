@@ -33,7 +33,7 @@ Here's a list of these tips&tricks:
 | 013 | Implement Interface |
 | 014 | Create undefined type. Use multi-cursor for struct tag Live Template. |
 | 015 | Generate test for function. Use auto-test for testing changes. |
-| 016 | Expand/Shrink Selection |
+| 016 | Extend/Shrink Selection |
 | 017 | Add Selection for Next Occurrence |
 | 018 | Completion in comments |
 | 019 | Navigate to File. Switcher. Recent Files. Recent Locations. |

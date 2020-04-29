@@ -6,6 +6,8 @@ type demoType struct {
 
 func (d *demoType) AddToField(val int) int {
 	// Step 1. Use Add Selection for Next Occurrence for Field1
+	// Shortcut: Alt + J on Windows/Linux
+	//           ^ + G on macOS
 
 	d.Field1 += val
 	return d.Field1

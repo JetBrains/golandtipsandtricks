@@ -18,7 +18,9 @@ func main() {
 
 }
 
-func _() (int, error) {
-	// Step 3. Use the return template for returning an in and a nil
+// Step 3. Add another return value of type error by using , after int
+
+func _() int {
+	// Step 4. Use the return template for returning an in and a nil
 
 }

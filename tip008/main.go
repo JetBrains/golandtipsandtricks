@@ -2,6 +2,9 @@ package main
 
 func main() {
 	// Parameter Info helps you to see parameters in a function/method.
+	// Shortcut: Ctrl + P on Windows/Linux
+	//           ⌘ + P on macOS
+
 	// Step 1. Invoke it here
 	myFunc()
 

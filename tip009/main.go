@@ -4,10 +4,12 @@ import "fmt"
 
 func main() {
 	// Completion doesn't work just in source code.
-	// For example, you can set a breakpoint condition and use completion
+	// For example, you can set a breakpoint condition
+	// and use completion to quickly create the breakpoint
 
 	for i := 0; i < 42; i++ {
 		msg, err := doStuff(i)
+
 		// E.g. Set a breakpoint below and use completion for err != nil
 		if err != nil {
 			break

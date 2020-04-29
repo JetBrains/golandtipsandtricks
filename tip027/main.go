@@ -1,7 +1,10 @@
 package main
 
-// Step 1. Invoke the Extract Interface refactoring on demo
-//  and extract To File main (without .go extension)
+// Step 1. Invoke the Extract Interface refactoring
+//  on demo and extract an interface named demoer
+//  to file main (without .go extension)
+// Shortcut: Ctrl + Alt + Shift + T on Windows/Linux
+//           ^ + T on macOS
 
 type demo struct{}
 
