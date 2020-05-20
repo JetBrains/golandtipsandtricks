@@ -2,6 +2,8 @@
 
 This repository is a collection of tips & tricks for GoLand that can be tried any time by users.
 
+Feel free to contribute or open issues for various features that you'd like to see added.
+
 ## How to use?
 
 Each file contains a small description of what to do.
