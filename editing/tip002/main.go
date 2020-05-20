@@ -11,11 +11,14 @@ func main() {
 	// But also in a struct.
 	// Step 2. Invoke it here
 	_ = demo{}
+
+	// Step 3. Or here
+	_ = demo{0, "", SubStruct{}}
 }
 
 type (
 	SubStruct struct {
-		Field1 int
+		SubField1 int
 	}
 
 	demo struct {

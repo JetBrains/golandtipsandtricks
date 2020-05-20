@@ -12,13 +12,14 @@ func main() {
 	// E.g. Change the message to add {{.Message}} and {{.Count}} instead of |
 
 	//language=GoTemplate
-	message := `各位 | 晚上好!
+	message := `{{- /*gotype: github.com/dlsniper/tipsandtricks/editing/tip004.Output*/ -}}
+各位 | 晚上好!
 We have | Gophers here today!
 `
 	printMessage(message, "Gopher")
 }
 
-type output struct {
+type Output struct {
 	Message string
 	Count   int
 }
@@ -26,7 +27,7 @@ type output struct {
 func printMessage(msg, name string) {
 	t := template.Must(template.New("output").Parse(msg))
 
-	o := output{Message: name}
+	o := Output{Message: name}
 
 	err := t.Execute(os.Stdout, o)
 	if err != nil {

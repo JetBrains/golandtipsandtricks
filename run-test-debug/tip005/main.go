@@ -12,12 +12,19 @@ func main() {
 	makeDemo().Greet(message)
 }
 
-type demo struct{}
+type demo struct{
+	init string
+}
+
+func (d demo) DebugString() string {
+	// Step 2. Mention that DebugString() performs magic in the debugger
+	return d.init
+}
 
 func (d demo) Greet(msg string) {
 	fmt.Println(msg)
 }
 
 func makeDemo() demo {
-	return demo{}
+	return demo{"MyTypeIsInitialized"}
 }

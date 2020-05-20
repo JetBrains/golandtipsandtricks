@@ -10,7 +10,13 @@ func main() {
 	for i := 0; i < 42; i++ {
 		msg, err := doStuff(i)
 
-		// E.g. Set a breakpoint below and use completion for err != nil
+		// Step 1. Set a breakpoint below
+		// Shortcut: Ctrl + F8 on Windows/Linux
+		//           ⌘ + F8 on macOS
+
+		// Step 2. Use completion for err != nil in breakpoint condition
+		// Shortcut: Ctrl + Shift + F8 on Windows/Linux
+		//           ⌘ + Shift + F8 on macOS
 		if err != nil {
 			break
 		}

@@ -12,7 +12,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-// Step 1. Run the code below with the Debugger tags turned on in the
+// Step 1. Run the code below with -tags=debugger turned on in the
 //  Run Configuration and see that there are labels in the configuration
 
 func main() {
