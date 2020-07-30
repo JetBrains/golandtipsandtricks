@@ -2,9 +2,6 @@ module github.com/dlsniper/tipsandtricks/modules/tip001
 
 go 1.11
 
-// TODO line1
-//  line two
-
 // Step 1. Use the require live template
 // E.g. require github.com/gin-gonic/gin v1.6.2
 
