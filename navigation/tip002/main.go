@@ -11,5 +11,5 @@ func main() {
 
 	// Step 3. Use Select in to show the file in the Project Tool Window
 	// Shortcut: Alt + F1 on Windows/Linux
-	//           ⌥ + + F1 on macOS
+	//           ⌥ + F1 on macOS
 }
