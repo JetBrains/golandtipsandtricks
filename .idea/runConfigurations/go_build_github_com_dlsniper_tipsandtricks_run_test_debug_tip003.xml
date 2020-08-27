@@ -2,10 +2,7 @@
   <configuration default="false" name="go build github.com/dlsniper/tipsandtricks/run-test-debug/tip003" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
     <module name="tipsandtricks" />
     <working_directory value="$PROJECT_DIR$/run-test-debug/tip003" />
-    <envs>
-      <env name="GODEBUG" value="tracebackancestors=10" />
-      <env name="florin" value="ishere" />
-    </envs>
+    <go_parameters value="-tags=debugger" />
     <kind value="PACKAGE" />
     <filePath value="$PROJECT_DIR$/run-test-debug/tip003/main.go" />
     <package value="github.com/dlsniper/tipsandtricks/run-test-debug/tip003" />
