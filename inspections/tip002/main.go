@@ -7,7 +7,7 @@ package main
 type user struct {
 	Username string `json:"name"`
 	FirstName string `json:"name"`
-	LastName string `json:"name"`
+	lastName string `json:"lastName"`
 }
 
 func main() {
