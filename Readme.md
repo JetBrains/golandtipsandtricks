@@ -36,6 +36,7 @@ The tips and tricks can be found divided by a few major categories:
 | [007](completion/tip007) | Completion with Tab | |
 | [008](completion/tip008) | Completion for type-assertion | |
 | [009](completion/tip009) | Parameter name auto-generation | |
+| [010](completion/tip010) | Date/Time completion | 2020.3 |
 
 
 ### Editing
@@ -56,7 +57,8 @@ The tips and tricks can be found divided by a few major categories:
 | Tip number | Contents | New in |
 |---|----|-----|
 | [001](inspections/tip001) | Detect and navigate to duplicate tags of fields in a structure | 2020.2 |
-| [001](inspections/tip001) | Inspection for int to string conversion (e.g. `string(int)`) | 2020.2 |
+| [002](inspections/tip002) | Inspection for int to string conversion (e.g. `string(int)`) | 2020.2 |
+| [003](inspections/tip003) | Inspection for lost context cancel call | 2020.3 |
 
 ### Go Modules
 | Tip number | Contents | New in |
@@ -86,7 +88,9 @@ The tips and tricks can be found divided by a few major categories:
 | [002](run-test-debug/tip002) | Generate test for function. Use auto-test for testing changes. | |
 | [003](run-test-debug/tip003) | Debugger Labels | |
 | [004](run-test-debug/tip004) | Benchmark support | |
-| [005](run-test-debug/tip005) | Smart Step Into | |
+| [005](run-test-debug/tip005) | Smart Step Into. Debugger custom values for types using DebugString/String/Error methods. | |
+| [006](run-test-debug/tip006) | Goroutines dumping | 2020.3 |
+| [007](run-test-debug/tip007) | Run subtests in table tests | 2020.3 |
 
 ## Setup the IDE for tips/comments/shortcut highlighting
 
