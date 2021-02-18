@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  db:
+    container_name: dockerdev-db
+    image: postgres:12.3-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: goland
+      POSTGRES_PASSWORD: goland
+      POSTGRES_DB: goland
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql

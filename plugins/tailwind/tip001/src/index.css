@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+    Step 1. Install the Tailwind CSS and Vue plugins from Settings/Preferences | Plugins | Marketplace
+    Step 2. Type something like:
+    #app {
+        @apply font-bold bg-blue-400;
+    }
+
+    Step 3. Hover the mouse over the font-bold or bg-blue-400 definitions.
+    Step 4. Switch to ./index.html and continue there.
+*/
+

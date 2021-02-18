@@ -9,7 +9,10 @@ func main() {
 	// with predefined code templates.
 
 	// E.g. Use .var after the below expression
-	sendMessage("hello GoPHeRS!")
+	_, err := sendMessage("hello GoPHeRS!")
+	if err != nil {
+		panic(err)
+	}
 }
 
 func sendMessage(msg string) (int, error) {

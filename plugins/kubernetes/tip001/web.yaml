@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    app: web
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: web
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: web
+          image: docker-dev:latest
+          imagePullPolicy: Never
+          env:
+            - name: DB_HOST
+              value: "dockerdev-db-exported"
+          ports:
+            - containerPort: 8080
+            - containerPort: 40000
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: web
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+spec:
+  selector:
+    app: web
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30800
+      name: web-app-port
+    - port: 40000
+      targetPort: 40000
+      nodePort: 30804
+      name: delve-port
+  type: NodePort

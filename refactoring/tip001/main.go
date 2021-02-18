@@ -9,6 +9,19 @@ package main
 // Shortcut: Alt + Insert on Windows/Linux
 //           ⌘ + N on macOS
 
+type demoType struct{}
+
+func (demoType) Read(p []byte) (n int, err error) {
+	panic("implement me")
+}
+
+func (demoType) Write(p []byte) (n int, err error) {
+	panic("implement me")
+}
+
+func (demoType) Close() error {
+	panic("implement me")
+}
 
 func main() {
 

@@ -59,11 +59,13 @@ The tips and tricks can be found divided by a few major categories:
 | [001](inspections/tip001) | Detect and navigate to duplicate tags of fields in a structure | 2020.2 |
 | [002](inspections/tip002) | Inspection for int to string conversion (e.g. `string(int)`) | 2020.2 |
 | [003](inspections/tip003) | Inspection for lost context cancel call | 2020.3 |
+| [004](inspections/tip004) | Extended support for printf-style calls to pkg/errors, logurs, and zap | 2020.3 |
 
 ### Go Modules
 | Tip number | Contents | New in |
 |---|----|-----|
 | [001](modules/tip001) | Go mod completions support. Inspection from the IDE for local paths. | |
+| [002](modules/tip002) | Support for retract directive. | 2020.3 |
 
 ### Navigation
 | Tip number | Contents | New in |
@@ -91,6 +93,34 @@ The tips and tricks can be found divided by a few major categories:
 | [005](run-test-debug/tip005) | Smart Step Into. Debugger custom values for types using DebugString/String/Error methods. | |
 | [006](run-test-debug/tip006) | Goroutines dumping | 2020.3 |
 | [007](run-test-debug/tip007) | Run subtests in table tests | 2020.3 |
+| [008](run-test-debug/tip008) | Add inline watches. | 2020.3 |
+| [009](run-test-debug/tip009) | Testify support for different test suites containing same method name. | 2020.3 |
+
+
+### Database support
+
+| Tip number | Contents | New in |
+|---|----|-----|
+| [001](database/tip001) | MongoDB databases can be queried using SQL. | 2020.3 |
+
+### Plugins
+
+#### Kubernetes
+| Tip number | Contents | New in |
+|---|----|-----|
+| [001](plugins/kubernetes/tip001) | Pod logs can now be downloaded. | 2020.3 |
+| [002](plugins/kubernetes/tip001) | Open Console and Run Shell actions are now available. | 2020.3 |
+
+#### Markdown
+| Tip number | Contents | New in |
+|---|----|-----|
+| [001](plugins/markdown/tip001) | [Mermaid.js](https://mermaid-js.github.io/) can be rendered in Markdown files. | 2020.3 |
+
+#### Tailwind
+| Tip number | Contents | New in |
+|---|----|-----|
+| [001](plugins/tailwind/tip001) | Tailwind CSS support. | 2020.3 |
+
 
 ## Setup the IDE for tips/comments/shortcut highlighting
 

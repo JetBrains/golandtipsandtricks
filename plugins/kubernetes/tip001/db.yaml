@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+  labels:
+    dockerdev: db
+data:
+  POSTGRES_DB: goland
+  POSTGRES_USER: goland
+  POSTGRES_PASSWORD: goland
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  labels:
+    dockerdev: db
+  name: db
+spec:
+  serviceName: dockerdev-db
+  selector:
+    matchLabels:
+      dockerdev: db
+  template:
+    metadata:
+      labels:
+        dockerdev: db
+    spec:
+      containers:
+        - name: db
+          image: postgres:12.3-alpine
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: db-config
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: db-init
+              mountPath: /docker-entrypoint-initdb.d/init.sql
+              subPath: init.sql
+      volumes:
+        -  name: db-init
+           hostPath:
+             path: /run/desktop/mnt/host/d/dockerdev
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    dockerdev: db
+  name: dockerdev-db-exported
+spec:
+  type: NodePort
+  ports:
+    - name: 5432-tcp
+      port: 5432
+      targetPort: 5432
+      nodePort: 30432
+  selector:
+    dockerdev: db

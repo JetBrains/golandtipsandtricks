@@ -9,5 +9,7 @@ func main() {
 
 	// Step 1. In the http.HandleFunc() call below, Smart Type Completion
 	//  can complete the expected lambda function correctly.
-	http.HandleFunc("/", )
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+
+	})
 }

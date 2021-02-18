@@ -20,3 +20,7 @@ func main() {
 	_ = demo{}
 	_ = demoer(nil)
 }
+
+type demoer interface {
+	Method1() int
+}
