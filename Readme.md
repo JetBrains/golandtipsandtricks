@@ -18,10 +18,17 @@ There are two types of important comments:
 The tips and tricks can be found divided by a few major categories:
 - [Completion](#completion)
 - [Editing](#editing)
+- [Inspections](#inspections)
 - [Go Modules](#go-modules)
 - [Navigation](#navigation)
 - [Refactoring](refactoring)
 - [Running, testing and debugging](#running-testing-and-debugging)
+- [Web support](#web-support)
+    - [Tailwind](#tailwind)
+- [Database support](#database-support)
+- [Plugins](#plugins)
+    - [Kubernetes](#kubernetes)
+    - [Markdown](#markdown)
 
 ### Completion
 
@@ -96,6 +103,12 @@ The tips and tricks can be found divided by a few major categories:
 | [008](run-test-debug/tip008) | Add inline watches. | 2020.3 |
 | [009](run-test-debug/tip009) | Testify support for different test suites containing same method name. | 2020.3 |
 
+### Web support
+
+#### Tailwind
+| Tip number | Contents | New in |
+|---|----|-----|
+| [001](plugins/tailwind/tip001) | Tailwind CSS support. | 2020.3 |
 
 ### Database support
 
@@ -115,11 +128,6 @@ The tips and tricks can be found divided by a few major categories:
 | Tip number | Contents | New in |
 |---|----|-----|
 | [001](plugins/markdown/tip001) | [Mermaid.js](https://mermaid-js.github.io/) can be rendered in Markdown files. | 2020.3 |
-
-#### Tailwind
-| Tip number | Contents | New in |
-|---|----|-----|
-| [001](plugins/tailwind/tip001) | Tailwind CSS support. | 2020.3 |
 
 
 ## Setup the IDE for tips/comments/shortcut highlighting
