@@ -21,6 +21,6 @@ func main() {
 // Step 3. Add another return value of type error by using , after int
 
 func _() int {
-	// Step 4. Use the return template for returning an in and a nil
+	// Step 4. Use the return template for returning an int and a nil
 
 }
